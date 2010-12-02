@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using DataAccess;
-using DataObjects.Entities;
-using NHibernate;
-using SessionPerPresenter.Data;
+using DataAccess.SessionHandling;
 
 namespace DataAccess
 {
-    //public class Dao<TEntity> : IDao<TEntity> where TEntity : class
     //public abstract class DAOBase<T> : IDAO<T>
     public class DAOBase<T> : IDAO<T> where T : class
     {

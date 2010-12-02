@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using NHibernate;
 
-namespace SessionPerPresenter.Data
+namespace DataAccess.SessionHandling
 {
     public interface ISessionProvider : IDisposable
     {
