@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DataAccess;
+using DataAccess.SessionHandling;
 using Ninject.Extensions.NamedScope;
 using Ninject.Modules;
 
-namespace SessionPerPresenter.Data
+namespace SessionPerPresenter
 {
     public class NinjectBindings : NinjectModule
     {
@@ -26,7 +27,6 @@ namespace SessionPerPresenter.Data
 
             Kernel.Bind<ISessionProvider>().To<SessionProvider>().InNamedScope(presenterScope);
             
-            //Kernel.Bind(typeof (IDao<>)).To(typeof (Dao<>));
             Kernel.Bind(typeof(IDAO<>)).To(typeof(DAOBase<>));
         }
     }

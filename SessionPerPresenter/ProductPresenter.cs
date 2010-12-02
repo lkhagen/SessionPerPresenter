@@ -1,6 +1,5 @@
 ﻿using DataAccess;
 using DataObjects.Entities;
-using SessionPerPresenter.Data;
 //using Eg.Core;
 
 namespace SessionPerPresenter

@@ -5,8 +5,6 @@ using System.Text;
 using DataAccess.SessionHandling;
 using NHibernate;
 using Ninject;
-using Ninject.Modules;
-using SessionPerPresenter.Data;
 
 namespace SessionPerPresenter
 {
@@ -15,10 +13,10 @@ namespace SessionPerPresenter
         static void Main(string[] args)
         {
             var sessionFactory = SessionFactory.Instance.GetSessionFactory();
+            
             var kernel = new StandardKernel();
 
             kernel.Load(new NinjectBindings());
-
             kernel.Bind<ISessionFactory>().ToConstant(sessionFactory);
 
             var customerPresenter = kernel.Get<CustomerPresenter>();

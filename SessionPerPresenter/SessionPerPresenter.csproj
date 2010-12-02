@@ -94,11 +94,7 @@
   <ItemGroup>
     <Compile Include="ProductPresenter.cs" />
     <Compile Include="ProductListView.cs" />
-    <Compile Include="Data\Dao.cs" />
-    <Compile Include="Data\IDao.cs" />
-    <Compile Include="Data\ISessionProvider.cs" />
-    <Compile Include="Data\NinjectBindings.cs" />
-    <Compile Include="Data\SessionProvider.cs" />
+    <Compile Include="NinjectBindings.cs" />
     <Compile Include="IPresenter.cs" />
     <Compile Include="CustomerPresenter.cs" />
     <Compile Include="CustomerListView.cs" />
